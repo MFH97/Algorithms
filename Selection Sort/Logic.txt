@@ -1,0 +1,51 @@
+"""
+How the Algorithm Works:
+First iteration:
+
+findSmallest returns 3 (index of 2).
+
+2 is removed from arr and added to newArr.
+
+arr becomes [5, 3, 6, 10], newArr is [2].
+
+Second iteration:
+
+findSmallest returns 1 (index of 3).
+
+3 is removed and added to newArr.
+
+arr becomes [5, 6, 10], newArr is [2, 3].
+
+Third iteration:
+
+findSmallest returns 0 (index of 5).
+
+5 is removed and added to newArr.
+
+arr becomes [6, 10], newArr is [2, 3, 5].
+
+Fourth iteration:
+
+findSmallest returns 0 (index of 6).
+
+6 is removed and added to newArr.
+
+arr becomes [10], newArr is [2, 3, 5, 6].
+
+Fifth iteration:
+
+findSmallest returns 0 (index of 10).
+
+10 is removed and added to newArr.
+
+arr becomes [], newArr is [2, 3, 5, 6, 10].
+
+Finally, [2, 3, 5, 6, 10] is returned and printed.
+
+Time Complexity:
+Worst/Average Case: O(n²) (since it compares each element in nested loops).
+
+Best Case: O(n²) (still checks all elements even if already sorted).
+
+This implementation modifies the original array (arr is emptied). If you want to keep the original array unchanged, you should make a copy of it first.
+"""
