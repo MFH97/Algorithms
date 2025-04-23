@@ -1,0 +1,23 @@
+How Binary Search Works:
+Initial Setup:
+
+low = 0, high = len(lst) - 1 (start and end indices).
+
+Loop Until low <= high:
+
+Calculate mid = (low + high) // 2.
+
+If lst[mid] == item, return mid.
+
+If lst[mid] > item, search the left half (high = mid - 1).
+
+If lst[mid] < item, search the right half (low = mid + 1).
+
+If Not Found:
+
+Return None after the loop ends.
+
+Time Complexity:
+O(log n) (much faster than linear search for large lists).
+
+Requirement: The input list must be sorted.
